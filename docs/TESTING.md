@@ -143,11 +143,10 @@ class PhysicsTests: XCTestCase {
 
 ## Lessons Learned
 
-*(Add here as you debug real issues — becomes invaluable reference)*
-
 | Issue | Root Cause | Prevention |
 |-------|------------|------------|
-| *(add as encountered)* | | |
+| xcodebuild "iPhone 16" not found | Xcode 26 ships with iPhone 17 series simulators | Use `iPhone 17 Pro` as destination, or check available sims first |
+| Simulator: no motion response | CoreMotion `isDeviceMotionAvailable` returns false on Simulator | Expected — guard skips motion setup, default gravity (0, -9.8) applies |
 
 ## Pre-Feature Completion Checklist
 

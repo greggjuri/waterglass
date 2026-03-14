@@ -3,23 +3,23 @@
 ## Current Sprint: Phase 1 — Proof of Concept
 
 ### In Progress
-- [x] Project setup and context engineering scaffold
+- [ ] `01-init-phase1-poc.md` — Physics world + glass + particles + CoreMotion (pending device testing)
 
 ### Up Next
-- [ ] `init-phase1-poc.md` - Physics world + glass + particles + CoreMotion
+*(nothing — Phase 1 POC is in progress)*
 
 ---
 
 ## Recently Completed
 
-*(nothing yet — project just started)*
+- [x] Project setup and context engineering scaffold
 
 ---
 
 ## Backlog
 
 ### Phase 1 - Proof of Concept
-- [ ] `init-phase1-poc.md` - Basic physics world, glass boundary, 50 particles, CoreMotion tilt
+- [ ] `01-init-phase1-poc.md` — Basic physics world, glass boundary, 50 particles, CoreMotion tilt
 
 ### Phase 2 - Make It Look Like Water
 - [ ] `init-phase2-visuals.md` - SKEffectNode metaball effect, blur/threshold, particle tuning
@@ -60,7 +60,7 @@
 
 ---
 
-*Last updated: 2026-03-14 (project initialised)*
+*Last updated: 2026-03-14 (Phase 1 POC code complete — pending device testing)*
 
 ---
 
