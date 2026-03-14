@@ -1,9 +1,9 @@
 # PRP Template
 
-## PRP-XXX: {Feature Name}
+## NN-prp-{name}: {Feature Name}
 
 **Created**: {YYYY-MM-DD}
-**Initial**: `initials/init-{feature}.md`
+**Initial**: `initials/NN-init-{name}.md`
 **Status**: Draft/Ready/In Progress/Complete
 
 ---

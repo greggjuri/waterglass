@@ -3,7 +3,7 @@
 Execute a Project Requirement Plan step-by-step for WaterGlass.
 
 ## Arguments
-- `$ARGUMENTS` - Path to PRP file (e.g., `prps/prp-phase1-poc.md`)
+- `$ARGUMENTS` - Path to PRP file (e.g., `prps/01-prp-phase1-poc.md`)
 
 ## Instructions
 
@@ -93,7 +93,7 @@ Provide summary:
 ```
 ## PRP Execution Complete
 
-**PRP**: prps/prp-{feature}.md
+**PRP**: prps/NN-prp-{name}.md
 **Status**: Complete (pending device testing) / Partial / Blocked
 
 ### Commits Made

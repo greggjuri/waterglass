@@ -36,8 +36,8 @@ WaterGlass/
 │   ├── TASK.md                      # Current tasks
 │   ├── DECISIONS.md                 # ADRs
 │   └── TESTING.md                   # Testing standards
-├── initials/                        # Feature specifications
-├── prps/                            # Implementation plans
+├── initials/                        # Feature specifications: NN-init-{name}.md
+├── prps/                            # Implementation plans: NN-prp-{name}.md
 │   └── templates/
 │       └── prp-template.md
 ├── .claude/
@@ -51,6 +51,13 @@ WaterGlass/
     ├── GameScene.sks
     └── Assets.xcassets/
 ```
+
+## File Naming Conventions
+
+- Feature specs: `initials/NN-init-{name}.md` — e.g. `01-init-phase1-poc.md`
+- Implementation plans: `prps/NN-prp-{name}.md` — e.g. `01-prp-phase1-poc.md`
+- The `NN` prefix is a zero-padded running number that matches between init and prp
+- Use kebab-case for the `{name}` portion
 
 ## Critical Rules
 
@@ -164,12 +171,13 @@ motionManager.startDeviceMotionUpdates(to: .main) { [weak self] motion, error in
 
 ### Generating PRPs
 ```bash
-/generate-prp initials/init-{feature}.md
+/generate-prp initials/NN-init-{name}.md
 ```
+Produces: `prps/NN-prp-{name}.md` — same number prefix as the init file.
 
 ### Executing PRPs
 ```bash
-/execute-prp prps/prp-{feature}.md
+/execute-prp prps/NN-prp-{name}.md
 ```
 
 ## Common Patterns

@@ -1,11 +1,11 @@
 # Init Template - Feature Specification
 
-## init-XX: {Feature Name}
+## NN-init-{name}: {Feature Name}
 
 **Created**: {YYYY-MM-DD}
 **Priority**: {High/Medium/Low}
 **Phase**: {1 / 2 / 3 / 4}
-**Depends On**: {init-YY, or "None"}
+**Depends On**: {NN-init-{name}, or "None"}
 
 ---
 
@@ -77,7 +77,8 @@
 
 ## Usage
 
-1. Copy to `initials/init-{feature-name}.md`
+1. Copy to `initials/NN-init-{name}.md` — use the next available running number
 2. Fill in all sections
 3. Answer all Open Questions before generating PRP
-4. Then in Claude Code: `/generate-prp initials/init-{feature}.md`
+4. Then in Claude Code: `/generate-prp initials/NN-init-{name}.md`
+   → Produces: `prps/NN-prp-{name}.md` (same number prefix)

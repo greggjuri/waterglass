@@ -3,7 +3,7 @@
 Generate a comprehensive Project Requirement Plan (PRP) for a WaterGlass feature.
 
 ## Arguments
-- `$ARGUMENTS` - Path to initial file (e.g., `initials/init-phase1-poc.md`)
+- `$ARGUMENTS` - Path to initial file (e.g., `initials/01-init-phase1-poc.md`)
 
 ## Instructions
 
@@ -37,8 +37,10 @@ Based on the feature, research existing code:
 
 ### Step 4: Generate PRP
 
-Create a new PRP file at `prps/prp-{feature-slug}.md` where:
-- feature-slug matches the init file name (e.g., `init-phase1-poc.md` → `prp-phase1-poc.md`)
+**Naming rule**: The PRP filename uses the same running number as the init file.
+- Input:  `initials/NN-init-{name}.md`
+- Output: `prps/NN-prp-{name}.md`
+- Example: `initials/01-init-phase1-poc.md` → `prps/01-prp-phase1-poc.md`
 
 Use the template at `prps/templates/prp-template.md` as the structure.
 
@@ -75,12 +77,14 @@ If average < 7:
 ## Example Usage
 
 ```
-/generate-prp initials/init-phase1-poc.md
+/generate-prp initials/01-init-phase1-poc.md
 ```
+→ Creates `prps/01-prp-phase1-poc.md`
 
 ## Quality Checklist
 
 Before completing, verify:
+- [ ] PRP filename matches init number prefix (e.g. `01-` → `01-`)
 - [ ] Every implementation step has specific Swift file paths
 - [ ] Steps are atomic and individually buildable
 - [ ] Device testing checklist is specific and actionable
