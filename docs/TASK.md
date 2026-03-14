@@ -3,7 +3,7 @@
 ## Current Sprint: Phase 1 — Proof of Concept
 
 ### In Progress
-- [ ] Project setup and context engineering scaffold
+- [x] Project setup and context engineering scaffold
 
 ### Up Next
 - [ ] `init-phase1-poc.md` - Physics world + glass + particles + CoreMotion
