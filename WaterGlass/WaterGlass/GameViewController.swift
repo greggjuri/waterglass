@@ -22,7 +22,7 @@ class GameViewController: UIViewController {
         #if DEBUG
         skView.showsFPS = true
         skView.showsNodeCount = true
-        skView.showsPhysics = true
+        skView.showsPhysics = false
         #endif
     }
 
