@@ -31,6 +31,7 @@ extension GameScene {
             body.friction = Physics.friction
             body.linearDamping = Physics.linearDamping
             body.angularDamping = Physics.angularDamping
+            body.density = Physics.particleDensity
             body.allowsRotation = false
             particle.physicsBody = body
 

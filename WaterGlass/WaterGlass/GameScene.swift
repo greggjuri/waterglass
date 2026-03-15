@@ -10,8 +10,9 @@ import CoreMotion
 
 enum Physics {
     static let gravityMultiplier: Double = 20.0
-    static let particleRadius: CGFloat = 4.0
-    static let particleCount: Int = 200
+    static let particleRadius: CGFloat = 3.0
+    static let particleCount: Int = 180
+    static let particleDensity: CGFloat = 0.3
     static let restitution: CGFloat = 0.0
     static let friction: CGFloat = 0.0
     static let linearDamping: CGFloat = 0.9
