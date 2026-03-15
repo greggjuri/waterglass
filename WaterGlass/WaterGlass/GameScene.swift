@@ -12,9 +12,9 @@ enum Physics {
     static let gravityMultiplier: Double = 20.0
     static let particleRadius: CGFloat = 8.0        // Phase 2: reduced from 12.0
     static let particleCount: Int = 100              // Phase 2: increased from 50
-    static let restitution: CGFloat = 0.3
-    static let friction: CGFloat = 0.05
-    static let linearDamping: CGFloat = 0.4
+    static let restitution: CGFloat = 0.05
+    static let friction: CGFloat = 0.2
+    static let linearDamping: CGFloat = 0.8
     static let angularDamping: CGFloat = 0.4
     static let glassInset: CGFloat = 60.0
     static let blurRadius: Double = 14.0             // Phase 2: metaball blur spread
