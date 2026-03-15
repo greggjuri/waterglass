@@ -17,8 +17,8 @@ enum Physics {
     static let linearDamping: CGFloat = 0.4
     static let angularDamping: CGFloat = 0.4
     static let glassInset: CGFloat = 60.0
-    static let blurRadius: Double = 12.0             // Phase 2: metaball blur spread
-    static let alphaMultiplier: Double = 20.0        // Phase 2: threshold sharpness
+    static let blurRadius: Double = 14.0             // Phase 2: metaball blur spread
+    static let alphaMultiplier: Double = 10.0        // Phase 2: threshold sharpness
 }
 
 // MARK: - GameScene
