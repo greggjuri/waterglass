@@ -1,12 +1,12 @@
 # WaterGlass - Task Tracker
 
-## Current Sprint: Phase 1 — Proof of Concept
+## Current Sprint: Phase 2 — Make It Look Like Water
 
 ### In Progress
-*(nothing currently in progress)*
+- [ ] `02-init-phase2-visuals.md` — Metaball liquid effect (pending device testing)
 
 ### Up Next
-*(Phase 2 features — see Backlog)*
+- [ ] `02-init-phase2-glass.md` — Proper glass shape/outline rendering
 
 ---
 
@@ -23,8 +23,8 @@
 - [x] `01-init-phase1-poc.md` — Basic physics world, glass boundary, 50 particles, CoreMotion tilt
 
 ### Phase 2 - Make It Look Like Water
-- [ ] `init-phase2-visuals.md` - SKEffectNode metaball effect, blur/threshold, particle tuning
-- [ ] `init-phase2-glass.md` - Proper glass shape/outline rendering
+- [ ] `02-init-phase2-visuals.md` — SKEffectNode metaball effect, blur/threshold, particle tuning
+- [ ] `02-init-phase2-glass.md` — Proper glass shape/outline rendering
 
 ### Phase 3 - Polish
 - [ ] `init-phase3-sound.md` - Slosh sound effects
@@ -61,7 +61,7 @@
 
 ---
 
-*Last updated: 2026-03-14 (Phase 1 POC complete — all device tests passed)*
+*Last updated: 2026-03-14 (Phase 2 metaball effect code complete — pending device testing)*
 
 ---
 

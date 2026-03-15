@@ -87,7 +87,11 @@ Document what you tried and how it felt — this is your institutional memory:
 | gravityMultiplier | 20.0 | (initial) | TBD on device |
 | restitution | 0.3 | (initial) | TBD on device |
 | linearDamping | 0.4 | (initial) | TBD on device |
-| particleCount | 50 | (initial) | TBD on device |
+| particleCount | 50 | Phase 1 | Worked well, upgraded to 100 for Phase 2 |
+| particleCount | 100 | Phase 2 — denser liquid | TBD on device |
+| particleRadius | 8.0 | Phase 2 — reduced from 12 | TBD on device |
+| blurRadius | 12.0 | Phase 2 — metaball blur spread | TBD on device |
+| alphaMultiplier | 20.0 | Phase 2 — threshold sharpness | TBD on device |
 
 *Add rows as you tune. Note what "too floaty", "too heavy", "twitchy" etc. feel like.*
 

@@ -30,6 +30,7 @@ extension GameScene {
         outline.strokeColor = SKColor(white: 0.4, alpha: 0.6)
         outline.lineWidth = 2.0
         outline.fillColor = .clear
+        outline.zPosition = 10  // render above effectNode so outline stays sharp
         addChild(outline)
     }
 }

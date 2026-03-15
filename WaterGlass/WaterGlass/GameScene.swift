@@ -10,13 +10,15 @@ import CoreMotion
 
 enum Physics {
     static let gravityMultiplier: Double = 20.0
-    static let particleRadius: CGFloat = 12.0
-    static let particleCount: Int = 50
+    static let particleRadius: CGFloat = 8.0        // Phase 2: reduced from 12.0
+    static let particleCount: Int = 100              // Phase 2: increased from 50
     static let restitution: CGFloat = 0.3
     static let friction: CGFloat = 0.05
     static let linearDamping: CGFloat = 0.4
     static let angularDamping: CGFloat = 0.4
     static let glassInset: CGFloat = 60.0
+    static let blurRadius: Double = 12.0             // Phase 2: metaball blur spread
+    static let alphaMultiplier: Double = 20.0        // Phase 2: threshold sharpness
 }
 
 // MARK: - GameScene
@@ -24,17 +26,18 @@ enum Physics {
 class GameScene: SKScene {
 
     let motionManager = CMMotionManager()
+    let effectNode = SKEffectNode()
 
     override func didMove(to view: SKView) {
         backgroundColor = .black
         setupPhysicsWorld()
+        setupEffectNode()
         createGlass()
         createWaterParticles()
         startMotionUpdates()
     }
 
     override func update(_ currentTime: TimeInterval) {
-        // Per-frame updates — empty for Phase 1
         // CoreMotion updates gravity in its own closure
     }
 

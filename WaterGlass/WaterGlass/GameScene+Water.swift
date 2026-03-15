@@ -17,11 +17,10 @@ extension GameScene {
 
         for _ in 0..<Physics.particleCount {
             let particle = SKShapeNode(circleOfRadius: Physics.particleRadius)
-            particle.fillColor = SKColor(red: 0.3, green: 0.6, blue: 1.0, alpha: 0.8)
-            particle.strokeColor = SKColor(red: 0.2, green: 0.4, blue: 0.8, alpha: 0.6)
-            particle.lineWidth = 1.0
+            particle.fillColor = .white       // white for max alpha signal — filter sets colour
+            particle.strokeColor = .clear     // no outline — filter handles visual
+            particle.lineWidth = 0
 
-            // Random position in upper half of glass — loose scatter avoids overlap explosion
             let x = CGFloat.random(in: glassMinX...glassMaxX)
             let y = CGFloat.random(in: glassMinY...glassMaxY)
             particle.position = CGPoint(x: x, y: y)
@@ -35,7 +34,7 @@ extension GameScene {
             body.allowsRotation = false
             particle.physicsBody = body
 
-            addChild(particle)
+            effectNode.addChild(particle)
         }
     }
 }
