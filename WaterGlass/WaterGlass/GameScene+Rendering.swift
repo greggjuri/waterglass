@@ -9,7 +9,7 @@ import CoreImage
 // MARK: - Metaball Filter
 
 class MetaballFilter: CIFilter {
-    var inputImage: CIImage?
+    @objc dynamic var inputImage: CIImage?
 
     override var outputImage: CIImage? {
         guard let input = inputImage else { return nil }
